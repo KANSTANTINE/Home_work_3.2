@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="308dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="46dp"
+        android:hint="введите возраст"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_Sex"
+        android:layout_width="308dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="46dp"
+        android:hint="введите пол"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_age" />
+
+    <Button
+        android:id="@+id/btn_second"
+        android:layout_width="166dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Sex" />
+
+    <TextView
+        android:id="@+id/tv_secondName"
+        android:layout_width="308dp"
+        android:layout_height="56dp"
+        android:text="name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_second"/>
+
+        <TextView
+            android:id="@+id/tv_secondSurName"
+            android:layout_width="308dp"
+            android:layout_height="56dp"
+            android:text="surName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_secondName"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
